@@ -1,0 +1,125 @@
+📌 Overview
+
+This project focuses on customer segmentation using the Mall Customers dataset.
+The goal is to group customers into different segments based on their demographic and purchasing behavior.
+Segmentation helps businesses identify target groups for marketing, promotions, and customer relationship management.
+
+🎯 Objectives
+
+Preprocess customer dataset (handle missing values, encode categorical features, scale numerical features).
+
+Apply KMeans clustering to segment customers.
+
+Determine the optimal number of clusters using Elbow Method and Silhouette Score.
+
+Visualize the clusters in 2D (Income vs Spending, Age vs Spending).
+
+Profile and interpret each cluster for business insights.
+
+📂 Dataset
+
+File: Mall_Customers.csv
+
+Columns:
+
+CustomerID → Unique ID of customer
+
+Gender → Male / Female
+
+Age → Age of customer
+
+Annual Income (k$) → Annual income in thousands of dollars
+
+Spending Score (1-100) → Spending score assigned by the mall
+
+⚙️ Preprocessing
+
+Removed duplicates and missing values.
+
+Encoded Gender (Male = 1, Female = 0).
+
+Created additional features:
+
+Income_per_Age
+
+Spend_per_Income
+
+Standardized features using StandardScaler.
+
+🔍 Clustering
+
+Chose KMeans as clustering algorithm.
+
+Used Elbow Method and Silhouette Score → optimal k = 6.
+
+Each customer assigned a cluster label (0–5).
+
+📊 Visualizations
+
+Elbow and Silhouette plots.
+
+Scatter plots of:
+
+Annual Income vs Spending Score
+
+Age vs Spending Score
+
+Cluster centers in original feature units.
+
+🧩 Cluster Profiles
+
+Premium Big Spenders → High income, high spending.
+
+Value Big Spenders → Medium income, high spending.
+
+Affluent Mid Spenders → High income, moderate spending.
+
+High Income, Low Spend → Wealthy but conservative spenders.
+
+Budget-Conscious → Low income, low spending.
+
+Mid-Market Customers → Average income and spending.
+
+📈 Insights
+
+High-value customers (Clusters 0 & 1) should be prioritized for loyalty programs.
+
+Affluent but low-spending customers (Cluster 3) represent untapped potential.
+
+Budget-conscious groups (Cluster 4) respond well to discounts and promotions.
+
+Mid-market customers (Cluster 5) provide steady revenue.
+
+🛠️ Tech Stack
+
+Python 3.x
+
+Pandas, NumPy
+
+Matplotlib, Seaborn
+
+Scikit-learn
+
+🚀 How to Run
+
+Clone this repo or download project files.
+
+Install dependencies:
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+Run the script:
+
+python customer_segmentation.py
+
+Or open the notebook:
+
+jupyter notebook Customer_Segmentation.ipynb
+
+📌 Deliverables
+
+Code → Python script / Notebook
+
+Report → Summary of methodology, results, and insights
+
+Visualizations → Cluster plots and evaluation metrics
