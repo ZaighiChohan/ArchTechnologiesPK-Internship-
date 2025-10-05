@@ -1,0 +1,31 @@
+## 📌 Description
+This project predicts the stock prices of Apple using historical data.  
+The model uses machine learning techniques to capture patterns and forecast future prices.
+
+## 📂 Files
+- `apple_share_price.csv` - Historical Apple stock price dataset  
+- `Taskstockprediction.py` - Python script for training and testing model  
+- `Task2 model output.png` - Visualization of predicted vs actual stock prices  
+
+## 🛠️ Tools & Libraries
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Jupyter / Python Scripts
+
+## 🚀 How to Run
+1. Run `Taskstockprediction.py` using Python:  
+   python Taskstockprediction.py
+The script will load the dataset, preprocess it, train a predictive model, and generate plots.
+
+The output plot will be saved as Task2 model output.png.
+
+📊 Results
+Preprocessing of stock price data performed.
+
+Model trained to predict stock closing prices.
+
+Visualization shows comparison of predicted vs actual values.
+
+Task 2 README → Apple Stock Price Prediction (with dataset, tools, results)
