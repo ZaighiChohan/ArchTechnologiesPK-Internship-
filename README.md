@@ -19,3 +19,6 @@ The dataset contains details like age, gender, ticket class, and fare.
 - Machine learning models applied to classify survival.  
 - Results visualized using plots and accuracy scores.
 """
+
+
+REST TASKS README FILE IS NAMED AS README1 README2 README3...
